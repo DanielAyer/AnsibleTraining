@@ -1,0 +1,9 @@
+# Set the server on which to run the playbook from the inventory of known servers.  This is set in /etc/ansible/hosts.
+- hosts: localhost
+  # Enable sudo control.
+  sudo: yes
+  # Set the appropriate user to connect to the remote server.
+  remote_user: ec2-user
+  # Declare roles.
+  roles:
+  - joshualund.ruby-2_1 
